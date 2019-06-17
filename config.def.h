@@ -16,11 +16,28 @@ static const char col_gray1[]       = "#1d2021";
 static const char col_gray2[]       = "#53585b";
 static const char col_gray3[]       = "#cdcdcd";
 static const char col_gray4[]       = "#e5e5e5";
-static const char col_cyan[]        = "#1e8bac";
+static const char col_black[]       = "#1d2021";
+static const char col_white[]       = "#e5e5e5";
+static const char col_red[]         = "#d72638";
+static const char col_orange[]      = "#eb8413"; 
+static const char col_yellow[]      = "#f19d1a"; 
+static const char col_green[]       = "#88b92d"; 
+static const char col_cyan[]        = "#1ba595";
+static const char col_blue[]        = "#1e8bac"; 
+static const char col_purple[]      = "#be4264"; 
+static const char col_brown[]       = "#c85e0d"; 
+
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	/*					fg         bg          border   */
+	[SchemeNorm] =	 { col_gray3,  col_gray1,  col_gray2 },
+	[SchemeSel]  =	 { col_gray4,  col_blue,   col_blue },
+	[SchemeWarn] =	 { col_black,  col_yellow, col_red },
+	[SchemeUrgent]=	 { col_white,  col_red,    col_red },
+	                 { col_red,    col_gray1,  col_gray2 },   //5
+	                 { col_yellow, col_gray1,  col_gray2 },   //6
+	                 { col_green,  col_gray1,  col_gray2 },   //7
+	                 { col_cyan,   col_gray1,  col_gray2 },   //8
+	                 { col_gray3,  col_gray1,  col_gray2 },   //9
 };
 
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
