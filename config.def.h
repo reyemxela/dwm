@@ -10,8 +10,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 //static const char *fonts[]          = { "monospace:size=10" };
 //static const char dmenufont[]       = "monospace:size=10";
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "Hack Nerd Font:size=10:style=bold" };
+static const char dmenufont[]       = "Hack Nerd Font:size=10:style=bold";
 static const char col_gray1[]       = "#1d2021";
 static const char col_gray2[]       = "#53585b";
 static const char col_gray3[]       = "#cdcdcd";
@@ -70,7 +70,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 //static const char *termcmd[]  = { "st", NULL };
 static const char *termcmd[]  = { "termite", NULL };
-static const char *lockcmd[]  = { "lockscreen", NULL };
+static const char *lockcmd[]  = { "/home/alexmeyer/bin/lockscreen", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
