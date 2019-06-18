@@ -30,14 +30,14 @@ static const char col_brown[]       = "#c85e0d";
 static const char *colors[][3]      = {
 	/*					fg         bg          border   */
 	[SchemeNorm] =	 { col_gray3,  col_gray1,  col_gray2 },
-	[SchemeSel]  =	 { col_gray4,  col_blue,   col_blue },
+	[SchemeSel]  =	 { col_gray1,  col_blue,   col_blue },
 	[SchemeWarn] =	 { col_black,  col_yellow, col_red },
 	[SchemeUrgent]=	 { col_white,  col_red,    col_red },
-	                 { col_red,    col_gray1,  col_gray2 },   //5
-	                 { col_yellow, col_gray1,  col_gray2 },   //6
-	                 { col_green,  col_gray1,  col_gray2 },   //7
-	                 { col_cyan,   col_gray1,  col_gray2 },   //8
-	                 { col_gray3,  col_gray1,  col_gray2 },   //9
+	                 { col_gray1,  col_red,    col_gray2 },   //5
+	                 { col_gray1,  col_yellow, col_gray2 },   //6
+	                 { col_gray1,  col_green,  col_gray2 },   //7
+	                 { col_gray1,  col_cyan,   col_gray2 },   //8
+	                 { col_gray1,  col_gray3,  col_gray2 },   //9
 };
 
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
