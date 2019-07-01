@@ -40,9 +40,9 @@ static const char *colors[][3]      = {
 	                 { col_gray1,  col_gray3,  col_gray2 },   //9
 };
 
-static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
-static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",     NULL };
-static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle",  NULL };
+static const char *upvol[]   = { "/usr/bin/pulsemixer", "--change-volume", "+5", "--max-volume", "100", NULL };
+static const char *downvol[] = { "/usr/bin/pulsemixer", "--change-volume", "-5", "--max-volume", "100",     NULL };
+static const char *mutevol[] = { "/usr/bin/pulsemixer", "--toggle-mute",  NULL };
 static const char *brightup[] = { "/usr/bin/xbacklight", "-inc", "10", NULL };
 static const char *brightdown[] = { "/usr/bin/xbacklight", "-dec", "10", NULL };
 
